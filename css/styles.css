@@ -7,9 +7,16 @@ body {
     height: 100vh;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
-    filter: drop-shadow(0 0 10px white);
 }
 
 a {
     color: white;
+}
+
+.embedim-snow {
+    filter: drop-shadow(0 0 10px white);
+}
+
+.title {
+    text-align: center;
 }
