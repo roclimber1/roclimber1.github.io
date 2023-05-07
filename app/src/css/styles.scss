@@ -1,4 +1,9 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
     font-family: kalam, sans-serif;
     color: white;
@@ -23,4 +28,15 @@ a {
 
 ul > li {
     font-size: larger;
+}
+
+
+.app-list > li {
+
+    counter-increment: css-counter 1;
+}
+
+.app-list > li::before {
+
+    content: counter(css-counter);
 }
