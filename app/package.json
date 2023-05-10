@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf ../*.html && rimraf ../*.css && rimraf ../*.js",
+    "clean": "rimraf ../*.html && rimraf ../*.css && rimraf ../*.js && rimraf ../*.fbx",
     "start": "npm run clean && webpack-dev-server --mode=development --open --hot",
     "build": "npm run clean && webpack",
     "watch": "npm run clean && webpack --watch"
@@ -27,7 +27,9 @@
     "@babel/plugin-transform-runtime": "^7.21.4",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-typescript": "^7.21.5",
+    "@types/three": "^0.152.0",
     "@types/webpack": "^5.28.1",
+    "@types/yuka": "^0.7.1",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "autoprefixer": "^10.4.14",
@@ -46,5 +48,9 @@
     "webpack": "^5.82.0",
     "webpack-cli": "^5.1.0",
     "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "three": "^0.152.2",
+    "yuka": "^0.7.8"
   }
 }
